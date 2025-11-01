@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formación Técnica en Construcciones Civiles - CTN</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ======== Estilos Generales ======== */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f4f6f8;
+    }
+
+    h1, h2, h3 {
+      color: #1e3a8a; /* Azul técnico */
+    }
+
+    /* ======== Encabezado ======== */
+    header {
+      background: #1e293b;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo {
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #cbd5e1;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    /* ======== Hero / Inicio ======== */
+    .hero {
+      background: linear-gradient(to right, #1e3a8a, #3b82f6);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      background: #fff;
+      color: #1e3a8a;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+
+    .hero button:hover {
+      background: #1e3a8a;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* ======== Secciones ======== */
+    main section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* ======== Materias ======== */
+    .materias-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .materias-grid div {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .materias-grid div:hover {
+      transform: translateY(-5px);
+    }
+
+    .materias-grid img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* ======== Quiénes somos ======== */
+    #quienes-somos p {
+      margin-bottom: 15px;
+    }
+
+    /* ======== Referencias ======== */
+    #referencias img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    #referencias {
+      text-align: center;
+    }
+
+    /* ======== Contacto ======== */
+    #contacto a {
+      color: #1e3a8a;
+      text-decoration: none;
+    }
+
+    #contacto a:hover {
+      text-decoration: underline;
+    }
+
+    /* ======== Footer ======== */
+    footer {
+      background: #1e293b;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      color: #60a5fa;
+      text-decoration: none;
+      margin: 0 8px;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #93c5fd;
+    }
+
+    /* ======== Responsive ======== */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .hero h2 { font-size: 1.1rem; }
+      nav { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======== Encabezado ======== -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">CTN | Construcciones Civiles</div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#materias">Materias</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#referencias">Referencias</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== Contenido Principal ======== -->
+  <main>
+    <!-- ----- Inicio ----- -->
+    <section id="inicio" class="hero">
+      <h1>Colegio Técnico Nacional</h1>
+      <h2>Especialidad en Construcciones Civiles</h2>
+      <p>Formando profesionales para el futuro de la infraestructura paraguaya.</p>
+      <button onclick="document.getElementById('materias').scrollIntoView({behavior:'smooth'})">Explorar formación</button>
+    </section>
+
+    <!-- ----- Materias ----- -->
+    <section id="materias">
+      <h2>Contenidos</h2>
+      <p>Conocé todo lo que ofrecemos para tu formación y desarrollo profesional.</p>
+
+      <div class="materias-grid">
+        <div>
+          <img src="chamba 1.jpg" alt="Materias Primer Año" />
+          <h3>Primer Año</h3>
+          <p>Proyecto y dibujo técnico</p>
+          <p>Taller e instalaciones</p>
+          <p>Laboratorio y materiales</p>
+          <p>Técnica instrumental</p>
+        </div>
+
+        <div>
+          <img src="chamba con pizo.jpg" alt="Materias Segundo Año" />
+          <h3>Segundo Año</h3>
+          <p>Estabilidad y resistencia de materiales</p>
+          <p>Topografía</p>
+          <p>Proyecto y dibujo técnico</p>
+          <p>Taller e instalaciones</p>
+          <p>Técnica instrumental</p>
+          <p>Laboratorio y materiales</p>
+        </div>
+
+        <div>
+          <img src="plano de verdAD.jpg" alt="Materias Tercer Año" />
+          <h3>Tercer Año</h3>
+          <p>Proyecto y dibujo técnico</p>
+          <p>Estabilidad y resistencia de los materiales</p>
+          <p>Taller e instalaciones</p>
+          <p>Laboratorio y materiales</p>
+          <p>Técnica instrumental</p>
+        </div>
+        <div class="materias-grid">
+        <div class="materia-card">
+          <img src="taller.jpg" alt="Taller">
+          <h3>Taller</h3>
+          <p>Aprendizaje práctico y teórico de una obra: elaboración de mortero con su dosificación correspondiente, levantamiento de muros, nivelación de suelos y revoques.</p>
+        </div>
+        <div class="materia-card">
+          <img src="instalaciones.jpg" alt="Instalaciones">
+          <h3>Instalaciones</h3>
+          <p>Parte teórica y práctica sobre instalaciones de agua, eléctricas, de desagüe y pluviales, además del montaje de tanques para edificios.</p>
+        </div>
+        <div class="materia-card">
+          <img src="dibujo tecnico.jpg" alt="Proyecto y Dibujo Técnico">
+          <h3>Proyecto y Dibujo Técnico</h3>
+          <p>Lectura e interpretación de planos, elaboración de maquetas y planos técnicos, y desarrollo de dibujos a mano alzada.</p>
+        </div>
+        <div class="materia-card">
+          <img src="estabilidad.jpg" alt="Estabilidad y Resistencia de los Materiales">
+          <h3>Estabilidad y Resistencia de los Materiales</h3>
+          <p>Estudio y aplicación de cálculos estructurales para edificaciones, considerando cargas, tensiones y materiales utilizados.</p>
+        </div>
+        <div class="materia-card">
+          <img src="topografia.jpg" alt="Topografía">
+          <h3>Topografía</h3>
+          <p>Aprendizaje de nivelación de terrenos y uso de instrumentos como el teodolito para levantamientos topográficos precisos.</p>
+        </div>
+        <div class="materia-card">
+          <img src="mortero.webp" alt="Laboratorio y Materiales">
+          <h3>Laboratorio y Materiales</h3>
+          <p>Estudio teórico y práctico de los materiales de construcción, su comportamiento y su uso en la elaboración de mezclas y morteros.</p>
+        </div>
+        <div class="materia-card">
+          <img src="tecnica.webp" alt="Técnica Instrumental">
+          <h3>Técnica Instrumental</h3>
+          <p>Desarrollo de cálculos de materiales, cómputo y presupuesto, siguiendo normas técnicas aplicadas a la construcción.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ----- Quiénes somos ----- -->
+    <section id="quienes-somos">
+      <h2>Quiénes somos</h2>
+      <p>En el Departamento de Construcciones Civiles del Colegio Técnico Nacional (CTN) de Encarnación, formamos profesionales altamente capacitados para los desafíos del sector de la construcción. Combinamos teoría, práctica e innovación para brindar una educación técnica de excelencia.</p>
+
+      <h2>Nuestra Misión</h2>
+      <p>Brindar una educación técnica que prepare a los estudiantes para diseñar, construir y gestionar proyectos de infraestructura con seguridad, sostenibilidad e innovación.</p>
+
+      <h2>Nuestros Valores</h2>
+      <p>✔ Compromiso con la calidad  
+         ✔ Innovación y creatividad  
+         ✔ Trabajo en equipo  
+         ✔ Responsabilidad social  
+         ✔ Sostenibilidad ambiental</p>
+
+      <h2>Nuestro Equipo</h2>
+      <p>Contamos con docentes experimentados, tanto en el ámbito académico como profesional, y una estrecha colaboración con empresas del sector para ofrecer una formación actualizada y práctica.</p>
+    </section>
+
+    <!-- ----- Referencias ----- -->
+    <section id="referencias">
+      <h2>Referencias</h2>
+      <p>Estos son algunos de nuestros proyectos y actividades destacadas.</p>
+      <img src="chamba2.jpg" alt="Proyecto 1" />
+      <img src="ladrillos.jpg" alt="Proyecto 2" />
+      <img src="chamba sexy.jpg" alt="Proyecto 3" />
+      <img src="chamba con hacha.jpg" alt="Proyecto 4" />
+    </section>
+
+    <!-- ----- Contacto ----- -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>📍 Dirección: M4Q4+98V, Encarnación 070115, Paraguay</p>
+      <p>📞 Teléfonos: +595 992 947167 | +595 992 324998</p>
+      <p>✉ Correo: <a href="mailto:escuelaempresactnycev@gmail.com">escuelaempresactnycev@gmail.com</a></p>
+    </section>
+  </main>
+
+  <!-- ======== Pie de página ======== -->
+  <footer>
+    <p>© 2025 Colegio Técnico Nacional | Todos los derechos reservados</p>
+   <p>TERCER CURSO- CONSTRUCCIONES CIVILES</p>
+    </div>
+  </footer>
+
+</body>
+</html>
